@@ -1,0 +1,28 @@
+{{ $role := .Page.Params.role }}
+
+<div class="py-10 xl:py-14 bg-no-repeat bg-cover" style="background-image: url('/theme-assets/jobs/{{ $role }}/guides.png');">
+  <div class="container mx-auto">
+    <section class="grid xl:grid-cols-12 gap-6 xl:gap-8">
+      <div class="col-span-full">
+        <h1 class="role-header">General {{ .Title }} Guides</h1>
+      </div>
+
+      {{ $sampleGuide1 := dict
+        "role" $role
+        "name" "Tank mitigation"
+        "image" "/theme-assets/sample_guide_1.png"
+        "icon" (printf "/theme-assets/jobs/%s.svg" (lower .Title))
+        "patch" "5.3"
+        "updated" "23 Jul 2021"
+        "inlineLink" ""
+      }}
+
+      {{ $guideList := slice $sampleGuide1 $sampleGuide1 $sampleGuide1 $sampleGuide1 $sampleGuide1 $sampleGuide1 }}
+
+      {{ range $guideList }}
+        <div class="col-span-4">
+          {{ partial "cards/guide.html" . }}
+        </div>
+      {{ end }}
+  </div>
+</div>
