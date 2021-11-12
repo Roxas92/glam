@@ -3,6 +3,7 @@ import { createRoleMetaSlider } from './collections/roleMetaSlider';
 import { createAuthorCollection } from './collections/authors';
 import { createGuidesCollection } from './collections/guides';
 import { createRoleLandingPageCollection } from './collections/roleLandingpages';
+import { createJobCollections } from './collections/jobs';
 
 window.CMS_MANUAL_INIT = true;
 
@@ -45,6 +46,7 @@ CMS.init({
       createAuthorCollection(IS_LOCAL_BUILD ? LOCAL_FOLDER_PREFIX : ''),
       createGuidesCollection(IS_LOCAL_BUILD ? LOCAL_FOLDER_PREFIX : ''),
       createRoleLandingPageCollection(IS_LOCAL_BUILD ? LOCAL_FOLDER_PREFIX : ''),
+      ...createJobCollections(IS_LOCAL_BUILD ? LOCAL_FOLDER_PREFIX : ''),
     ],
   },
 });
