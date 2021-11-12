@@ -7,12 +7,19 @@ export const createLandingPage = (job, folderPrefix) => ({
   file: `${folderPrefix}${getPathForJob(job)}/_index.md`,
   fields: [
     createBodyField(),
-    { label: 'Job Name', name: 'job_name', widget: 'string' },
     {
-      label: 'Header Image',
-      name: 'header_image',
-      widget: 'image',
-      choose_url: false,
+      label: 'Title',
+      name: 'title',
+      widget: 'select',
+      options: [job.jobName],
+      default: [job.jobName],
+    },
+    {
+      label: 'Job Name',
+      name: 'job_name',
+      widget: 'select',
+      options: [job.id],
+      default: [job.id],
     },
     {
       label: 'Leveling Guide Image',
@@ -38,13 +45,6 @@ export const createLandingPage = (job, folderPrefix) => ({
     {
       label: 'Fight Tips Image',
       name: 'fight_tips_image',
-      widget: 'image',
-      choose_url: false,
-      required: false,
-    },
-    {
-      label: 'Resources Image',
-      name: 'resources_image',
       widget: 'image',
       choose_url: false,
       required: false,

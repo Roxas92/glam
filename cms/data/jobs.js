@@ -3,6 +3,7 @@ import { roles } from './roles';
 export const jobs = [
   {
     id: 'warrior',
+    jobName: 'Warrior',
     label: 'Warrior guide',
     name: 'war-guide',
     role: roles.TANK,
@@ -10,6 +11,7 @@ export const jobs = [
   },
   {
     id: 'paladin',
+    jobName: 'Paladin',
     label: 'Paladin guide',
     name: 'pld-guide',
     role: roles.TANK,
@@ -17,6 +19,7 @@ export const jobs = [
   },
   {
     id: 'dark-knight',
+    jobName: 'Dark Knight',
     label: 'Dark Knight guide',
     name: 'drk-guide',
     role: roles.TANK,
@@ -24,6 +27,7 @@ export const jobs = [
   },
   {
     id: 'gunbreaker',
+    jobName: 'Gunbreaker',
     label: 'Gunbreaker guide',
     name: 'gnb-guide',
     role: roles.TANK,
@@ -31,6 +35,7 @@ export const jobs = [
   },
   {
     id: 'white-mage',
+    jobName: 'White Mage',
     label: 'White Mage guide',
     name: 'whm-guide',
     role: roles.HEALER,
@@ -38,6 +43,7 @@ export const jobs = [
   },
   {
     id: 'scholar',
+    jobName: 'Scholar',
     label: 'Scholar guide',
     name: 'sch-guide',
     role: roles.HEALER,
@@ -45,6 +51,7 @@ export const jobs = [
   },
   {
     id: 'astrologian',
+    jobName: 'Astrologian',
     label: 'Astrologian guide',
     name: 'ast-guide',
     role: roles.HEALER,
@@ -52,6 +59,7 @@ export const jobs = [
   },
   {
     id: 'sage',
+    jobName: 'Sage',
     label: 'Sage guide',
     name: 'sge-guide',
     role: roles.HEALER,
@@ -59,6 +67,7 @@ export const jobs = [
   },
   {
     id: 'dragoon',
+    jobName: 'Dragoon',
     label: 'Dragoon guide',
     name: 'drg-guide',
     role: roles.MELEE,
@@ -66,6 +75,7 @@ export const jobs = [
   },
   {
     id: 'reaper',
+    jobName: 'Reaper',
     label: 'Reaper guide',
     name: 'rpr-guide',
     role: roles.MELEE,
@@ -73,6 +83,7 @@ export const jobs = [
   },
   {
     id: 'samurai',
+    jobName: 'Samurai',
     label: 'Samurai guide',
     name: 'sam-guide',
     role: roles.MELEE,
@@ -80,6 +91,7 @@ export const jobs = [
   },
   {
     id: 'monk',
+    jobName: 'Monk',
     label: 'Monk guide',
     name: 'mnk-guide',
     role: roles.MELEE,
@@ -87,6 +99,7 @@ export const jobs = [
   },
   {
     id: 'ninja',
+    jobName: 'Ninja',
     label: 'Ninja guide',
     name: 'nin-guide',
     role: roles.MELEE,
@@ -94,6 +107,7 @@ export const jobs = [
   },
   {
     id: 'dancer',
+    jobName: 'Dancer',
     label: 'Dancer guide',
     name: 'dnc-guide',
     role: roles.RANGED,
@@ -101,6 +115,7 @@ export const jobs = [
   },
   {
     id: 'machinist',
+    jobName: 'Machinist',
     label: 'Machinist guide',
     name: 'mch-guide',
     role: roles.RANGED,
@@ -108,6 +123,7 @@ export const jobs = [
   },
   {
     id: 'bard',
+    jobName: 'Bard',
     label: 'Bard guide',
     name: 'brd-guide',
     role: roles.RANGED,
@@ -115,6 +131,7 @@ export const jobs = [
   },
   {
     id: 'black-mage',
+    jobName: 'Black Mage',
     label: 'Black Mage guide',
     name: 'blm-guide',
     role: roles.CASTER,
@@ -122,6 +139,7 @@ export const jobs = [
   },
   {
     id: 'summoner',
+    jobName: 'Summoner',
     label: 'Summoner guide',
     name: 'smn-guide',
     role: roles.CASTER,
@@ -129,6 +147,7 @@ export const jobs = [
   },
   {
     id: 'red-mage',
+    jobName: 'Red Mage',
     label: 'Red Mage guide',
     name: 'rdm-guide',
     role: roles.CASTER,
