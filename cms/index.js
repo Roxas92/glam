@@ -1,4 +1,5 @@
 import CMS from 'netlify-cms-app';
+import { createRoleMetaSlider } from './collections/roleMetaSlider';
 
 window.CMS_MANUAL_INIT = true;
 
@@ -36,6 +37,8 @@ CMS.init({
     load_config_file: false,
     media_folder: `${IS_LOCAL_BUILD ? LOCAL_FOLDER_PREFIX : ''}static/img`,
     public_folder: '/img',
-    collections: [],
+    collections: [
+      createRoleMetaSlider(),
+    ],
   },
 });
