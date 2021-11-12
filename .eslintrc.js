@@ -32,4 +32,7 @@ module.exports = {
       },
     ],
   },
+  globals: {
+    IS_LOCAL_BUILD: 'readonly',
+  },
 };
